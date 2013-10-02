@@ -75,11 +75,11 @@ if there was no line separator present.</p>
           <h3>
 <a name="better-than-csv" class="anchor" href="#better-than-csv"><span class="octicon octicon-link"></span></a>Better than CSV</h3>
 
-<div class="highlight"><pre><span class="p">[</span><span class="s2">"Name"</span><span class="p">,</span> <span class="s2">"Session"</span><span class="p">,</span> <span class="s2">"Score"</span><span class="p">]</span>
-<span class="p">[</span><span class="s2">"Gilbert"</span><span class="p">,</span> <span class="s2">"2013"</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
-<span class="p">[</span><span class="s2">"Alexa"</span><span class="p">,</span> <span class="s2">"2013"</span><span class="p">,</span> <span class="mi">29</span><span class="p">]</span>
-<span class="p">[</span><span class="s2">"May"</span><span class="p">,</span> <span class="s2">"2012B"</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>
-<span class="p">[</span><span class="s2">"Deloise"</span><span class="p">,</span> <span class="s2">"2012A"</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span> 
+<div class="highlight"><pre><span class="p">[</span><span class="s2">"Name"</span><span class="p">,</span> <span class="s2">"Session"</span><span class="p">,</span> <span class="s2">"Score"</span><span class="p">,</span> <span class="s2">"Completed"</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">"Gilbert"</span><span class="p">,</span> <span class="s2">"2013"</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="kc">true</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">"Alexa"</span><span class="p">,</span> <span class="s2">"2013"</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="kc">true</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">"May"</span><span class="p">,</span> <span class="s2">"2012B"</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">"Deloise"</span><span class="p">,</span> <span class="s2">"2012A"</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="kc">true</span><span class="p">]</span> 
 </pre></div>
 
           <p>CSV seems easy so too many programmers have written code to generate it, and almost every implementation is slightly different. Handling broken CSV files is an all-too common task. CSV has is no standard encoding, no standard column separator and multiple character escaping standards. String is the only type supported for cell values.</p>
@@ -91,7 +91,7 @@ if there was no line separator present.</p>
           <h3>
 <a name="easy-nested-data" class="anchor" href="#easy-nested-data"><span class="octicon octicon-link"></span></a>Easy Nested Data</h3>
 
-<div class="highlight"><pre><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Gilbert"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"straight"</span><span class="p">,</span> <span class="s2">"7♣"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"one pair"</span><span class="p">,</span> <span class="s2">"10♥"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"high card"</span><span class="p">,</span> <span class="s2">"K♦"</span><span class="p">]]}</span>
+<div class="highlight"><pre><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Gilbert"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"straight"</span><span class="p">,</span> <span class="s2">"7♣"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"one pair"</span><span class="p">,</span> <span class="s2">"10♥"</span><span class="p">]]}</span>
 <span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Alexa"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"two pair"</span><span class="p">,</span> <span class="s2">"4♠"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"two pair"</span><span class="p">,</span> <span class="s2">"9♠"</span><span class="p">]]}</span>
 <span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"May"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[]}</span>
 <span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Deloise"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"three of a kind"</span><span class="p">,</span> <span class="s2">"5♣"</span><span class="p">]]}</span>
