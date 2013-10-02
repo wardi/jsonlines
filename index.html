@@ -26,7 +26,7 @@
 
         <section id="main_content">
           <h3>
-<a name="simple-like-json" class="anchor" href="#simple-like-json"><span class="octicon octicon-link"></span></a>Simple. Like JSON</h3>
+<a name="simple-like-json" class="anchor" href="#simple-like-json"><span class="octicon octicon-link"></span></a>Simple Like JSON</h3>
 
 <p>This page describes the JSON Lines text format. JSON Lines is a convenient format for storing
 structured data that may be processed one record at a time. It works well with unix-style
@@ -99,14 +99,14 @@ if there was no line separator present.</p>
 
         </section>
 
-        <p>JSON Lines' biggest strength is in handling lots of similar nested data structures. It's a great alternative to a directory full of XML files</p>
+        <p>JSON Lines' biggest strength is in handling lots of similar nested data structures. One <code>.jl</code> file is much easier to handle than a directory full of XML files.</p>
 
         <p>If you have large nested structures reading the JSON Lines text directly isn't recommended. This is a shell alias you can use to make viewing large structures easier:</p>
 
-        <div class="highlight"><pre><span class="nb">alias </span><span class="nv">jlpretty</span><span class="o">=</span><span class="s1">'python -c"import sys,json; [0 for s in sys.stdin</span>
-        <span class="s1">if sys.stdout.write(json.dumps(json.loads(s), sort_keys=True, indent=2,</span>
-        <span class="s1">ensure_ascii=False) + chr(10))]"'</span>
-        </pre></div>
+<div class="highlight"><pre><span class="nb">alias </span><span class="nv">jlpretty</span><span class="o">=</span><span class="s1">'python -c"import sys,json; [0 for s in sys.stdin</span>
+<span class="s1">if sys.stdout.write(json.dumps(json.loads(s), sort_keys=True, indent=2,</span>
+<span class="s1">ensure_ascii=False) + chr(10))]"'</span>
+</pre></div>
 
 
 <p>The output of <code>grep Gilbert winning_hands.jl | jlpretty</code> will be:</p>
