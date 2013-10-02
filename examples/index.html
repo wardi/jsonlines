@@ -59,7 +59,7 @@
 
 <div class="highlight"><pre><span class="nb">alias </span><span class="nv">jlpretty</span><span class="o">=</span><span class="s1">'python -c"import sys,json; [0 for s in sys.stdin if sys.stdout.write(json.dumps(json.loads(s), sort_keys=True, indent=2, ensure_ascii=False) + chr(10))]"'</span>
 
-cat winning_hands.jl | grep Gilbert | jlpretty
+cat winning_hands.jl | grep pair | jlpretty
 </pre></div>
 
 <div class="highlight"><pre><span class="p">{</span>
@@ -75,8 +75,20 @@ cat winning_hands.jl | grep Gilbert | jlpretty
     <span class="p">]</span>
   <span class="p">]</span>
 <span class="p">}</span>
+<span class="p">{</span>
+  <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Alexa"</span><span class="p">,</span> 
+  <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">[</span>
+      <span class="s2">"two pair"</span><span class="p">,</span> 
+      <span class="s2">"4♠"</span>
+    <span class="p">],</span> 
+    <span class="p">[</span>
+      <span class="s2">"two pair"</span><span class="p">,</span> 
+      <span class="s2">"9♠"</span>
+    <span class="p">]</span>
+  <span class="p">]</span>
+<span class="p">}</span>
 </pre></div>
-
 <hr>
 
 <p><a href="/">Home</a></p>
