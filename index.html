@@ -106,10 +106,9 @@ if there was no line separator present.</p>
 <div class="highlight"><pre><span class="nb">alias </span><span class="nv">jlpretty</span><span class="o">=</span><span class="s1">'python -c"import sys,json; [0 for s in sys.stdin</span>
 <span class="s1">if sys.stdout.write(json.dumps(json.loads(s), sort_keys=True, indent=2,</span>
 <span class="s1">ensure_ascii=False) + chr(10))]"'</span>
+
+cat winning_hands.jl | grep Gilbert | jlpretty
 </pre></div>
-
-
-<p>The output of <code>grep Gilbert winning_hands.jl | jlpretty</code> will be:</p>
 
 <div class="highlight"><pre><span class="p">{</span>
   <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Gilbert"</span><span class="p">,</span> 
