@@ -56,8 +56,7 @@ unlikely to be valid UTF-8, making the mistake easy to identify.</p>
 <a name="line-separator-is-n" class="anchor" href="#line-separator-is-n"><span class="octicon octicon-link"></span></a>Line Separator is <code>'\n'</code>
 </h3>
 
-<p>This means <code>'\r\n'</code> is also supported because white space within lines is ignored, as dictated
-by the <a href="http://json.org">JSON specification</a>.</p>
+<p>This means <code>'\r\n'</code> is also supported because trailing white space is ignored when parsing JSON values.</p>
 
 <p>The last character in the file <em>may</em> be a line separator, and it will be treated the same as
 if there was no line separator present.</p>
