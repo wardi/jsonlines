@@ -82,6 +82,12 @@ if there was no line separator present.</p>
 <span class="p">[</span><span class="s2">"Deloise"</span><span class="p">,</span> <span class="s2">"2012A"</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span> 
 </pre></div>
 
+          <p>CSV seems easy, so everyone has written code to generate it. Almost every implementation slightly different. Handling broken CSV files is an all-too common task. CSV has is no standard encoding, no standard column separator and multiple character escaping standards. String is the only type supported for cell values.</p>
+
+          <p>JSON Lines handles tabular data cleanly and without ambiguity. Cells may use the standard JSON types.</p>
+
+          <p>The biggest missing piece is an import/export filter for popular spreadsheet programs so that non-programmers can use this format.</p>
+
           <h3>
 <a name="easy-nested-data" class="anchor" href="#easy-nested-data"><span class="octicon octicon-link"></span></a>Easy Nested Data</h3>
 
