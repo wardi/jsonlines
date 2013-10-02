@@ -103,9 +103,7 @@ if there was no line separator present.</p>
 
         <p>If you have large nested structures reading the JSON Lines text directly isn't recommended. This is a shell alias you can use to make viewing large structures easier:</p>
 
-<div class="highlight"><pre><span class="nb">alias </span><span class="nv">jlpretty</span><span class="o">=</span><span class="s1">'python -c"import sys,json; [0 for s in sys.stdin</span>
-<span class="s1">if sys.stdout.write(json.dumps(json.loads(s), sort_keys=True, indent=2,</span>
-<span class="s1">ensure_ascii=False) + chr(10))]"'</span>
+<div class="highlight"><pre><span class="nb">alias </span><span class="nv">jlpretty</span><span class="o">=</span><span class="s1">'python -c"import sys,json; [0 for s in sys.stdin if sys.stdout.write(json.dumps(json.loads(s), sort_keys=True, indent=2, ensure_ascii=False) + chr(10))]"'</span>
 
 cat winning_hands.jl | grep Gilbert | jlpretty
 </pre></div>
