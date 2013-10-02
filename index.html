@@ -26,7 +26,7 @@
 
         <section id="main_content">
           <h3>
-<a name="json-lines-simple-like-json" class="anchor" href="#simple-like-json"><span class="octicon octicon-link"></span></a>Simple. Like JSON</h3>
+<a name="simple-like-json" class="anchor" href="#simple-like-json"><span class="octicon octicon-link"></span></a>Simple. Like JSON</h3>
 
 <p>This page describes the JSON Lines text format. JSON Lines is a convenient format for storing
 structured data that may be processed one record at a time. It works well with unix-style
@@ -66,6 +66,32 @@ if there was no line separator present.</p>
 
 <p>Text editing programs call the first line of a text file "line 1". We also call the first value in a JSON Lines file "value 1".</p>
         </section>
+
+        <h2>Examples</h2>
+
+        <section id="examples">
+          <h3>
+<a name="better-than-csv" class="anchor" href="#better-than-csv"><span class="octicon octicon-link"></span></a>Better than CSV</h3>
+
+<div class="highlight"><pre><span class="p">[</span><span class="s2">"Name"</span><span class="p">,</span> <span class="s2">"Session"</span><span class="p">,</span> <span class="s2">"Score"</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">"Gilbert"</span><span class="p">,</span> <span class="s2">"2013"</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">"Alexa"</span><span class="p">,</span> <span class="s2">"2013"</span><span class="p">,</span> <span class="mi">29</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">"May"</span><span class="p">,</span> <span class="s2">"2012B"</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">"Deloise"</span><span class="p">,</span> <span class="s2">"2012A"</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span> 
+</pre></div>
+
+          <h3>
+<a name="easy-nested-data" class="anchor" href="#easy-nested-data"><span class="octicon octicon-link"></span></a>Easy Nested Data</h3>
+
+<div class="highlight"><pre><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Gilbert"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"straight"</span><span class="p">,</span> <span class="s2">"7♣"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"one pair"</span><span class="p">,</span> <span class="s2">"10♥"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"high card"</span><span class="p">,</span> <span class="s2">"K♦"</span><span class="p">]]}</span>
+<span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Alexa"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"two pair"</span><span class="p">,</span> <span class="s2">"4♠"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"two pair"</span><span class="p">,</span> <span class="s2">"9♠"</span><span class="p">]]}</span>
+<span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"May"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[]}</span>
+<span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Deloise"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"three of a kind"</span><span class="p">,</span> <span class="s2">"5♣"</span><span class="p">]]}</span>
+</pre></div>
+
+        </section>
+
+        <hr>
 
         <footer>
           <a href="https://github.com/wardi/jsonlines/issues">Report a bug or make a suggestion</a><br>
