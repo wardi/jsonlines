@@ -40,41 +40,32 @@ are recommended for saving space, resulting in <code>.jl.gz</code> or <code>.jl.
 <h3>
 <a name="utf-8-encoding" class="anchor" href="#utf-8-encoding"><span class="octicon octicon-link"></span></a>UTF-8 Encoding</h3>
 
-<p>UTF-8 is backwards compatible with ASCII. JSON allows encoding Unicode strings with only ASCII escape sequences, however those escapes are ugly in a text editor.</p>
+<p>UTF-8 is backwards compatible with ASCII. JSON allows encoding Unicode strings with only ASCII escape sequences, however those escapes may be considered ugly when viewed in a text editor.</p>
 
 <p>Choosing UTF-8 as the standard lets the JSON Lines
 author choose to escape characters or not. Also, if a file is saved with a different encoding it is very
-unlikely to be valid UTF-8, making the mistake quickly obvious.</p>
+unlikely to be valid UTF-8, making the mistake easy to identify.</p>
 
 <h3>
 <a name="each-line-is-a-valid-json-value" class="anchor" href="#each-line-is-a-valid-json-value"><span class="octicon octicon-link"></span></a>Each Line is a Valid JSON Value</h3>
 
-<p>The most common values will be objects or arrays, but any of the following is valid:</p>
-
-<ul>
-<li>string</li>
-<li>number</li>
-<li>object</li>
-<li>array</li>
-<li><code>true</code></li>
-<li><code>false</code></li>
-<li><code>null</code></li>
-</ul><p>See <a href="http://json.org/">json.org</a> for more information.</p>
+<p>The most common values will be objects or arrays, but any JSON value is permitted.</p>
+<p>See <a href="http://json.org/">json.org</a> for more information about JSON values.</p>
 
 <h3>
 <a name="line-separator-is-n" class="anchor" href="#line-separator-is-n"><span class="octicon octicon-link"></span></a>Line Separator is <code>'\n'</code>
 </h3>
 
 <p>This means <code>'\r\n'</code> is also supported because white space within lines is ignored, as dictated
-by the JSON spec.</p>
+by the <a href="http://json.org">JSON specification</a>.</p>
 
 <p>The last character in the file <em>may</em> be a line separator, and it will be treated the same as
-if there was no line separator.</p>
+if there was no line separator present.</p>
 
 <h3>
 <a name="count-lines-from-1" class="anchor" href="#count-lines-from-1"><span class="octicon octicon-link"></span></a>Count Lines From 1</h3>
 
-<p>Text editing programs call the first line of a text file "line 1". We also call the first JSON value in a JSON Lines file value 1.</p>
+<p>Text editing programs call the first line of a text file "line 1". We also call the first value in a JSON Lines file "value 1".</p>
         </section>
 
         <footer>
