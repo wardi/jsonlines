@@ -33,11 +33,6 @@ structured data that may be processed one record at a time. It works well with u
 text processing tools and shell pipelines. It's a great format for log files.
 It's also a flexible format for passing messages between cooperating processes.</p>
 
-<p>JSON Lines files may be saved with the file extension <code>.jsonl</code>.</p>
-
-<p>Stream compressors like <code>gzip</code> or <code>bzip2</code>
-are recommended for saving space, resulting in <code>.jsonl.gz</code> or <code>.jsonl.bz2</code> files.</p>
-
 <h3>
 <a name="utf-8-encoding" class="anchor" href="#utf-8-encoding"><span class="octicon octicon-link"></span></a>UTF-8 Encoding</h3>
 
@@ -64,9 +59,14 @@ unlikely to be valid UTF-8, making the mistake easy to identify.</p>
 if there was no line separator present.</p>
 
 <h3>
-<a name="count-lines-from-1" class="anchor" href="#count-lines-from-1"><span class="octicon octicon-link"></span></a>Count Lines From 1</h3>
+<a name="conventions" class="anchor" href="#conventions"><span class="octicon octicon-link"></span></a>Suggested Conventions</h3>
 
-<p>Text editing programs call the first line of a text file "line 1". We also call the first value in a JSON Lines file "value 1".</p>
+<p>JSON Lines files may be saved with the file extension <code>.jsonl</code>.</p>
+
+<p>Stream compressors like <code>gzip</code> or <code>bzip2</code>
+are recommended for saving space, resulting in <code>.jsonl.gz</code> or <code>.jsonl.bz2</code> files.</p>
+
+<p>Text editing programs call the first line of a text file "line 1". The first value in a JSON Lines file should also be called "value 1".</p>
         </section>
 
         <hr>
