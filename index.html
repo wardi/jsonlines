@@ -33,27 +33,29 @@ structured data that may be processed one record at a time. It works well with u
 text processing tools and shell pipelines. It's a great format for log files.
 It's also a flexible format for passing messages between cooperating processes.</p>
 
+<p>The JSON Lines format has three requirements:</p>
+
 <h3>
-<a name="utf-8-encoding" class="anchor" href="#utf-8-encoding"><span class="octicon octicon-link"></span></a>UTF-8 Encoding</h3>
+<a name="utf-8-encoding" class="anchor" href="#utf-8-encoding"><span class="octicon octicon-link"></span></a>1. UTF-8 Encoding</h3>
 
 <p>JSON allows encoding Unicode strings with only ASCII escape sequences,
 however those escapes will be hard to read when viewed in a text editor.
-The UTF-8 encoding is backwards compatible with ASCII so the author of the
+The author of the
 JSON Lines file may choose to escape characters to work with plain ASCII files.</p>
 
 <p>Encodings other than UTF-8
-are very unlikely to be valid when decoding as UTF-8 so the chance of
+are very unlikely to be valid when decoded as UTF-8 so the chance of
 <a href="http://en.wikipedia.org/wiki/Mojibake">accidentally misinterpreting
-characters</a> in text is low.</p>
+characters</a> in JSON Lines files is low.</p>
 
 <h3>
-<a name="each-line-is-a-valid-json-value" class="anchor" href="#each-line-is-a-valid-json-value"><span class="octicon octicon-link"></span></a>Each Line is a Valid JSON Value</h3>
+<a name="each-line-is-a-valid-json-value" class="anchor" href="#each-line-is-a-valid-json-value"><span class="octicon octicon-link"></span></a>2. Each Line is a Valid JSON Value</h3>
 
 <p>The most common values will be objects or arrays, but any JSON value is permitted.</p>
 <p>See <a href="http://json.org/">json.org</a> for more information about JSON values.</p>
 
 <h3>
-<a name="line-separator-is-n" class="anchor" href="#line-separator-is-n"><span class="octicon octicon-link"></span></a>Line Separator is <code>'\n'</code>
+<a name="line-separator-is-n" class="anchor" href="#line-separator-is-n"><span class="octicon octicon-link"></span></a>3. Line Separator is <code>'\n'</code>
 </h3>
 
 <p>This means <code>'\r\n'</code> is also supported because trailing white space is ignored when parsing JSON values.</p>
