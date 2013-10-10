@@ -328,6 +328,7 @@ nav li {
   display: inline;
   list-style-type: none;
   padding-right: 20px;
+  padding-left: 0;
 }
 
 /* MISC */
