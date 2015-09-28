@@ -63,7 +63,7 @@
 
         <p>If you have large nested structures then reading the JSON Lines text directly isn't recommended. Use the "jq" tool to make viewing large structures easier:</p>
 
-<div class="highlight"><pre>cat winning_hands.jsonl | grep pair | jq .
+<div class="highlight"><pre>grep pair winning_hands.jsonl | jq .
 </pre></div>
 
 <div class="highlight"><pre><span class="p">{</span>
