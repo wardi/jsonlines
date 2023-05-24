@@ -344,6 +344,13 @@ nav li {
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
+
+/* VALIDATOR */
+
+.validator .result {
+  padding: 20px 0 0 0;
+}
+
 /* #Media Queries
 ================================================== */
 
