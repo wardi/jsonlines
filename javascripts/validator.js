@@ -3,8 +3,9 @@
 $(document).ready(() => {
   // CodeMirror editor
   let editor = CodeMirror.fromTextArea(jQuery('.validator textarea')[0], {
-      lineNumbers: true,
-      theme: 'abbott',
+    lineNumbers: true,
+    theme: 'abbott',
+    mode: 'javascript',
   });
   
   // clear button
