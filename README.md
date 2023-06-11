@@ -5,6 +5,12 @@ Visit https://jsonlines.org
 
 ## Development
 
+### Jekyll installation
+
+Follow steps:
+- https://jekyllrb.com/docs/installation/
+- https://jekyllrb.com/docs
+
 ### Bundle installation
 
 ```shell
