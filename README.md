@@ -21,5 +21,9 @@ bundle install
 ### Build and serve the site
 
 ```shell
+# just build the website
+bundle exec jekyll build
+
+# build and serve the website on default port
 bundle exec jekyll serve
 ```

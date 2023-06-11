@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div id="container">
+      <div class="inner">
+        <header>
+          <h1>JSON Lines</h1>
+          <h2>{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ page.title }}{% endif %}</h2>
+        </header>
+        {% include menu.html %}
+        <hr>
+        <section id="main_content">
+          {{ content }}
+        </section>
+        {% include footer.html %}
+    </div>
+  </body>
+</html>

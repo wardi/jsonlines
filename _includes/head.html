@@ -1,12 +1,18 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Chivo:900">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print">
+  {% for css in page.custom-css-list %}
+  <link rel="stylesheet" type="text/css" href="{{ css }}" >
+  {% endfor %}
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <title>JSON Lines</title>
+  {% for javascript in page.custom-javascript-list %}
+  <script src="{{ javascript }}"></script>
+  {% endfor %}
+  <title>{%if page.title != 'JSON Lines'%}JSON Lines | {% endif %}{{ page.title }}</title>
 </head>
