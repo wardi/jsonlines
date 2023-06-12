@@ -1,0 +1,11 @@
+items:
+  - label: Home
+    url: '/'
+  - label: Examples
+    url: '/examples/'
+  - label: 'Validator'
+    url: '/validator/'
+  - label: 'On the web'
+    url: '/on_the_web/'
+  - label: 'json.org'
+    url: 'https://json.org'

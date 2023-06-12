@@ -1,41 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>JSON Lines Examples</title>
-  </head>
-
-  <body>
-    <div id="container">
-      <div class="inner">
-
-        <header>
-          <h1>JSON Lines</h1>
-          <h2>On the web</h2>
-        </header>
-
-<nav><ul>
-<li><a href="/">Home</a></li>
-<li><a href="/examples/">Examples</a></li>
-<li><a href="/validator/">Validator</a></li>
-<li>On the web</li>
-<li><a href="https://json.org/">json.org</a></li>
-</ul></nav>
-
-        <hr>
-
-        <section id="main_content">
+---
+layout: default
+title: On The Web
+---
 
 <p><a href="https://github.com/pytest-dev/pytest-reportlog">pytest-reportlog</a> is a pytest plugin which writes testing report data in JSON lines format</p>
-          
+
 <p><a href="https://github.com/ndjson/ndjson-spec">NDJSON</a> is a similar format that also allows blank lines</p>
 
 <p><a href="https://okfnlabs.org/blog/2014/09/01/bubbles-python-etl.html">Bubbles</a> supports JSON Lines datastores</p>
@@ -47,17 +16,17 @@
 <p><a href="https://www.graylog.org/resources/gelf/">Graylog GELF</a> is format for log messages, their stream is de-facto JSON lines.</p>
 
 <p><a href="https://www.scrapy.org">Scrapy</a> is a framework for web scraping &amp; crawling, it supports and recommends JSON lines since long -- <a href="https://twitter.com/pablohoffman/status/547385799093022723">it might've even coined the term</a>.</p>
-          
+
 <p><a href="https://clickhouse.yandex/">ClickHouse</a> is an open source column-oriented DBMS. It supports JSON lines as <a href="https://clickhouse.yandex/reference_en.html#JSONEachRow">JSONEachRow</a> format for input and output.</p>
 
-<p><a href="https://dataflowkit.com">Dataflow kit</a> is a web scraping open source framework written in Go. JSON Lines is one of the supported formats for storing results.</p>   
+<p><a href="https://dataflowkit.com">Dataflow kit</a> is a web scraping open source framework written in Go. JSON Lines is one of the supported formats for storing results.</p>
 
 <p><a href="https://github.com/dart-lang/test/blob/master/pkgs/test/doc/json_reporter.md">dart</a> uses JSON Lines as one of the possible reporters when running tests.</p>
 
 <p><a href="https://spark.apache.org">Apache Spark</a> uses JSONL for reading and writing JSON data.</p>
 
 <p><a href="https://arangodb.com">ArangoDB</a> is an open source multi-model database. The JSON lines format allows to import huge amounts of documents sequentially (via <a href="https://www.arangodb.com/docs/stable/programs-arangoimport-examples-json.html">arangoimport</a>).</p>
-          
+
 <p><a href="https://www.rumbledb.org/">Rumble</a> is a JSONiq engine that runs on top of Spark. It can process datasets in the JSON lines format that have billions of objects and more.</p>
 
 <p><a href="https://neo4j.com/developer">Neo4j</a> the open-source graph database supports JSONL export and import via its standard library procedures <a href="https://neo4j.com/labs/apoc/4.1/export/json/#export-database-json"><code>apoc.export/import.json</code></a> to allow stream processing of nodes and relationships.</p>
@@ -72,14 +41,4 @@
 
 <p><a href="https://www.htmlvalidator.com/">CSS HTML Validator for Windows v22.0211+</a> now supports JSON Lines syntax checking.</p>
 
-<p><a href="https://miller.readthedocs.io/en/latest/file-formats/#json-lines">Miller</a> supports JSON Lines format as input.</p>          
-        </section>
-        <footer>
-          <a href="https://github.com/wardi/jsonlines/issues">Report a bug or make a suggestion</a> &bull;
-          Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a> &bull;
-          This page is maintained by <a href="https://excess.org">Ian Ward</a>.
-        </footer>      
-      </div>
-    </div>
-  </body>
-</html>
+<p><a href="https://miller.readthedocs.io/en/latest/file-formats/#json-lines">Miller</a> supports JSON Lines format as input.</p>
