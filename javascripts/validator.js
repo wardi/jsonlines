@@ -20,7 +20,7 @@ $(document).ready(() => {
     let errors = [];
     for (let i = 0; i < lines.length; i++) {
       let line = lines[i]
-      if (i !== lines.length - 1 || lines !== '') {
+      if (!(i === lines.length - 1 && lines[i] === '')) {
         try {
           JSON.parse(line);
         } catch (e) {
