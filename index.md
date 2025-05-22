@@ -28,15 +28,20 @@ subtitle: Documentation for the JSON Lines text file format
  of <a href="https://en.wikipedia.org/wiki/Mojibake">accidentally misinterpreting characters</a>
  in JSON Lines files is low.
 </p>
+<p>
+  Like the JSON standard <a href="https://datatracker.ietf.org/doc/html/rfc8259#section-8.1">
+  a byte order mark (U+FEFF) must NOT be included</a>.
+</p>
 <h3>
  <a name="each-line-is-a-valid-json-value" class="anchor" href="#each-line-is-a-valid-json-value" id="each-line-is-a-valid-json-value"></a>
  2. Each Line is a Valid JSON Value
 </h3>
 <p>
  The most common values will be objects or arrays, but any JSON value is permitted.
+ e.g. <code>null</code> is a valid value but a blank line is not.
 </p>
 <p>
- See <a href="https://json.org/">json.org</a> for more information about JSON values.
+ See <a href="https://json.org/">json.org</a> for a definition of JSON values.
 </p>
 <h3>
  <a name="line-separator-is-n" class="anchor" href="#line-separator-is-n" id="line-separator-is-n"></a>
@@ -47,12 +52,12 @@ subtitle: Documentation for the JSON Lines text file format
  implicitly ignored when parsing JSON values.
 </p>
 <p>
- The last character in the file <em>may</em> be a line separator, and it will be treated
- the same as if there was no line separator present.
+ The last character in a file following the last JSON value <em>may</em> be a line separator.
+ In this case the line separator does not indicate the start of another JSON value.
 </p>
 <h3>
  <a name="conventions" class="anchor" href="#conventions" id="conventions"></a>
- 4. Suggested Conventions
+ Conventions
 </h3>
 <p>
  JSON Lines files may be saved with the file extension <code>.jsonl</code>.

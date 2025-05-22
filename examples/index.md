@@ -20,6 +20,17 @@ title: Examples
 <p>The biggest missing piece is an import/export filter for popular spreadsheet programs so that non-programmers can use this format.</p>
 
 <h3>
+<a name="self-describing" class="anchor" href="#self-describing"><span class="octicon octicon-link"></span></a>Self-describing data</h3>
+
+<div class="highlight"><pre><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Gilbert"</span><span class="p">,</span> <span class="nt">"session"</span><span class="p">:</span> <span class="s2">"2013"</span><span class="p">,</span> <span class="nt">"score"</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span> <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
+<span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Alexa"</span><span class="p">,</span> <span class="nt">"session"</span><span class="p">:</span> <span class="s2">"2013"</span><span class="p">,</span> <span class="nt">"score"</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span> <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
+<span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"May"</span><span class="p">,</span> <span class="nt">"session"</span><span class="p">:</span> <span class="s2">"2012B"</span><span class="p">,</span> <span class="nt">"score"</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span> <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">false</span><span class="p">}</span>
+<span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Deloise"</span><span class="p">,</span> <span class="nt">"session"</span><span class="p">:</span> <span class="s2">"2012A"</span><span class="p">,</span> <span class="nt">"score"</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span> 
+</pre></div>
+
+<p>JSON Lines enables applications to read objects line-by-line, with each line fully describing a JSON object.  The example above contains the same data as the <a href="#better-than-csv">tabular example</a> above, but allows applications to split files on newline boundaries for parallel loading, and eliminates any ambiguity if fields are omitted or re-ordered.</p>
+
+<h3>
 <a name="easy-nested-data" class="anchor" href="#easy-nested-data"><span class="octicon octicon-link"></span></a>Easy Nested Data</h3>
 
 <div class="highlight"><pre><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Gilbert"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"straight"</span><span class="p">,</span> <span class="s2">"7♣"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"one pair"</span><span class="p">,</span> <span class="s2">"10♥"</span><span class="p">]]}</span>

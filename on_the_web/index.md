@@ -40,5 +40,20 @@ title: On The Web
 <p><a href="https://shopify.dev/api/usage/bulk-operations/queries">Shopify GraphQL Bulk Operations API</a>, designed for very large data exports from Shopify stores, returns results in the form of a JSONL file.</p>
 
 <p><a href="https://www.htmlvalidator.com/">CSS HTML Validator for Windows v22.0211+</a> now supports JSON Lines syntax checking.</p>
+          
+<p><a href="https://pkg.go.dev/encoding/json#NewEncoder">Go Standard library's json.Encoder</a> will produce JSON lines by default. The decoder parses Concatenated JSON, which is compatible with, though less strict than, JSON lines</p>
+
+<p><a href="https://github.com/simonfrey/jsonl">Golang JSONL library</a></p>
 
 <p><a href="https://miller.readthedocs.io/en/latest/file-formats/#json-lines">Miller</a> supports JSON Lines format as input.</p>
+
+<p><a href="https://mattermost.com/">Mattermost</a> is an open-source, self-hostable online chat service. It uses JSON Lines as the format for <a href="https://docs.mattermost.com/onboard/bulk-loading-data.html">bulk data migration</a> on self-hosted instances.</p>
+
+<p><a href="https://docs.mattermost.com/onboard/bulk-loading-data.html">Mattermost</a> is a collaboration tool and uses the JSON Lines format for bulk data import.</p>
+
+<p><a href="https://github.com/jwodder/serde-jsonlines">serde-jsonlines</a> is a Rust library for reading &amp; writing JSON Lines documents.</p>
+
+<p><a href="https://github.com/indykoning/php-jsonl">php-jsonl</a> is a PHP library for reading &amp; writing JSON Lines documents, taking advantage of the streaming benefits.</p>
+
+<p><a href="https://bkl.gopatchy.io/">BKL</a> is a layered templating configuration tool that supports JSON Lines input and output.</p>
+
