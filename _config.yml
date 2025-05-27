@@ -16,7 +16,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jsonlines.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
   
 # Disable warning related to https://sass-lang.com/d/slash-div
 sass:
