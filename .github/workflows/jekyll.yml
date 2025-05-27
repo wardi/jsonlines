@@ -69,5 +69,5 @@ jobs:
           git add .
           git config --global user.name 'Deploy Bot'
           git config --global user.email 'deploy-bot@jsonlines.org'
-          git commit -m 'Automated Deployment'
+          git commit --allow-empty -m 'Automated Deployment'
           git push          
