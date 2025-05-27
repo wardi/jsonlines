@@ -1,13 +1,13 @@
 <nav>
   <ul>
-    {% for item in site.data.menu.items %}
+    {% for item in site.data.menu.items -%}
     <li>
-      {% if item.url == page.url %}
+      {%- if item.url == page.url -%}
       {{ item.label }}
-      {% else %}
+      {%- else -%}
       <a href="{{ item.url }}">{{ item.label }}</a>
-      {% endif %}
+      {%- endif -%}
     </li>
-    {% endfor %}
+    {% endfor -%}
   </ul>
 </nav>
