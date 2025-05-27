@@ -1,38 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>JSON Lines Examples</title>
-  </head>
-
-  <body>
-    <div id="container">
-      <div class="inner">
-
-        <header>
-          <h1>JSON Lines</h1>
-          <h2>On the web</h2>
-        </header>
-
-<nav><ul>
-<li><a href="/">Home</a></li>
-<li><a href="/examples/">Examples</a></li>
-<li><a href="/validator/">Validator</a></li>
-<li>On the web</li>
-<li><a href="https://json.org/">json.org</a></li>
-</ul></nav>
-
-        <hr>
-
-        <section id="main_content">
+---
+layout: default
+title: On The Web
+---
 
 <p><a href="https://github.com/pytest-dev/pytest-reportlog">pytest-reportlog</a> is a pytest plugin which writes testing report data in JSON lines format</p>
 
@@ -88,13 +57,3 @@
 
 <p><a href="https://bkl.gopatchy.io/">BKL</a> is a layered templating configuration tool that supports JSON Lines input and output.</p>
 
-        </section>
-        <footer>
-          <a href="https://github.com/wardi/jsonlines/issues">Report a bug or make a suggestion</a> &bull;
-          Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a> &bull;
-          This page is maintained by <a href="https://excess.org">Ian Ward</a>.
-        </footer>
-      </div>
-    </div>
-  </body>
-</html>
