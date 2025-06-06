@@ -7,5 +7,7 @@ items:
     url: '/validator/'
   - label: 'On the web'
     url: '/on_the_web/'
+  - label: 'Internet Draft'
+    url: '/rfc/draft-jsonlines-standard_mime_type.html'
   - label: 'json.org'
     url: 'https://json.org'
