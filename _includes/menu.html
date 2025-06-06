@@ -1,0 +1,13 @@
+<nav>
+  <ul>
+    {% for item in site.data.menu.items -%}
+    <li>
+      {%- if item.url == page.url -%}
+      {{ item.label }}
+      {%- else -%}
+      <a href="{{ item.url }}">{{ item.label }}</a>
+      {%- endif -%}
+    </li>
+    {% endfor -%}
+  </ul>
+</nav>

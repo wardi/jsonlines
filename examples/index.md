@@ -1,40 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>JSON Lines Examples</title>
-  </head>
+---
+layout: default
+title: Examples
+---
 
-  <body>
-    <div id="container">
-      <div class="inner">
-
-        <header>
-          <h1>JSON Lines</h1>
-          <h2>Examples</h2>
-        </header>
-
-<nav><ul>
-<li><a href="/">Home</a></li>
-<li>Examples</li>
-<li><a href="/validator/">Validator</a></li>
-<li><a href="/on_the_web/">On the web</a></li>
-<li><a href="/rfc/">RFC (draft)</a></li>
-<li><a href="https://json.org/">json.org</a></li>
-</ul></nav>
-
-        <hr>
-
-        <section id="main_content">
-          <h3>
+<h3>
 <a name="better-than-csv" class="anchor" href="#better-than-csv"><span class="octicon octicon-link"></span></a>Better than CSV</h3>
 
 <div class="highlight"><pre><span class="p">[</span><span class="s2">"Name"</span><span class="p">,</span> <span class="s2">"Session"</span><span class="p">,</span> <span class="s2">"Score"</span><span class="p">,</span> <span class="s2">"Completed"</span><span class="p">]</span>
@@ -44,13 +13,13 @@
 <span class="p">[</span><span class="s2">"Deloise"</span><span class="p">,</span> <span class="s2">"2012A"</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="kc">true</span><span class="p">]</span> 
 </pre></div>
 
-          <p>CSV seems so easy that many programmers have written code to generate it themselves, and almost every implementation is different. Handling broken CSV files is a common and frustrating task. CSV has no standard encoding, no standard column separator and multiple character escaping standards. String is the only type supported for cell values, so some programs attempt to guess the correct types.</p>
+<p>CSV seems so easy that many programmers have written code to generate it themselves, and almost every implementation is different. Handling broken CSV files is a common and frustrating task. CSV has no standard encoding, no standard column separator and multiple character escaping standards. String is the only type supported for cell values, so some programs attempt to guess the correct types.</p>
 
-          <p>JSON Lines handles tabular data cleanly and without ambiguity. Cells may use the standard JSON types.</p>
+<p>JSON Lines handles tabular data cleanly and without ambiguity. Cells may use the standard JSON types.</p>
 
-          <p>The biggest missing piece is an import/export filter for popular spreadsheet programs so that non-programmers can use this format.</p>
+<p>The biggest missing piece is an import/export filter for popular spreadsheet programs so that non-programmers can use this format.</p>
 
-          <h3>
+<h3>
 <a name="self-describing" class="anchor" href="#self-describing"><span class="octicon octicon-link"></span></a>Self-describing data</h3>
 
 <div class="highlight"><pre><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Gilbert"</span><span class="p">,</span> <span class="nt">"session"</span><span class="p">:</span> <span class="s2">"2013"</span><span class="p">,</span> <span class="nt">"score"</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span> <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
@@ -59,9 +28,9 @@
 <span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Deloise"</span><span class="p">,</span> <span class="nt">"session"</span><span class="p">:</span> <span class="s2">"2012A"</span><span class="p">,</span> <span class="nt">"score"</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> <span class="nt">"completed"</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span> 
 </pre></div>
 
-          <p>JSON Lines enables applications to read objects line-by-line, with each line fully describing a JSON object.  The example above contains the same data as the <a href="#better-than-csv">tabular example</a> above, but allows applications to split files on newline boundaries for parallel loading, and eliminates any ambiguity if fields are omitted or re-ordered.</p>
+<p>JSON Lines enables applications to read objects line-by-line, with each line fully describing a JSON object.  The example above contains the same data as the <a href="#better-than-csv">tabular example</a> above, but allows applications to split files on newline boundaries for parallel loading, and eliminates any ambiguity if fields are omitted or re-ordered.</p>
 
-          <h3>
+<h3>
 <a name="easy-nested-data" class="anchor" href="#easy-nested-data"><span class="octicon octicon-link"></span></a>Easy Nested Data</h3>
 
 <div class="highlight"><pre><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Gilbert"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"straight"</span><span class="p">,</span> <span class="s2">"7♣"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"one pair"</span><span class="p">,</span> <span class="s2">"10♥"</span><span class="p">]]}</span>
@@ -70,11 +39,10 @@
 <span class="p">{</span><span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Deloise"</span><span class="p">,</span> <span class="nt">"wins"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"three of a kind"</span><span class="p">,</span> <span class="s2">"5♣"</span><span class="p">]]}</span>
 </pre></div>
 
-        </section>
 
-        <p>JSON Lines' biggest strength is in handling lots of similar nested data structures. One <code>.jsonl</code> file is easier to work with than a directory full of XML files.</p>
+<p>JSON Lines' biggest strength is in handling lots of similar nested data structures. One <code>.jsonl</code> file is easier to work with than a directory full of XML files.</p>
 
-        <p>If you have large nested structures then reading the JSON Lines text directly isn't recommended. Use the "jq" tool to make viewing large structures easier:</p>
+<p>If you have large nested structures then reading the JSON Lines text directly isn't recommended. Use the "jq" tool to make viewing large structures easier:</p>
 
 <div class="highlight"><pre>grep pair winning_hands.jsonl | jq .
 </pre></div>
@@ -107,16 +75,3 @@
 <span class="p">}</span>
 </pre></div>
 <hr>
-
-
-        <footer>
-          <a href="https://github.com/wardi/jsonlines/issues">Report a bug or make a suggestion</a> &bull;
-          Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a> &bull;
-          This page is maintained by <a href="https://excess.org">Ian Ward</a>.
-        </footer>
-
-        
-      </div>
-    </div>
-  </body>
-</html>
