@@ -14,6 +14,7 @@ Follow steps:
 ### Bundle installation
 
 ```shell
+cd site
 bundle config set --local path 'vendor/bundle'
 bundle install
 ```
@@ -21,6 +22,9 @@ bundle install
 ### Build and serve the site
 
 ```shell
+# change directory to site
+cd site
+
 # just build the website
 bundle exec jekyll build
 
