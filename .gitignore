@@ -1,3 +1,14 @@
+# Bundle generated folders
+.bundle
+vendor/bundle
+
+# Jekyll generated folders
+_site
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Internet Draft Setup
 *.html
 *.pdf
 *.redxml
