@@ -1,0 +1,35 @@
+# Bundle generated folders
+.bundle
+vendor/bundle
+
+# Jekyll generated folders
+_site
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Internet Draft Setup
+*.html
+*.pdf
+*.redxml
+*.swp
+*.txt
+*.upload
+*~
+.tags
+/*-[0-9][0-9].xml
+/.*.mk
+/.gems/
+/.idea/
+/.refcache
+/.venv/
+/.vscode/
+/lib
+/node_modules/
+/versioned/
+Gemfile.lock
+archive.json
+draft-jsonlines-standard-content-type.xml
+package-lock.json
+report.xml
+!requirements.txt

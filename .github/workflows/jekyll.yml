@@ -65,12 +65,12 @@ jobs:
           name: site
           path: /tmp/site
       - name: Sync
-        run: rsync -avh --delete --exclude .git /tmp/site/ .
+        run: rsync -avh --delete --exclude .git --exclude internet-draft /tmp/site/ .
       - name: Push
         run: |
           git status
           git add .
           git config --global user.name 'Deploy Bot'
           git config --global user.email 'deploy-bot@jsonlines.org'
-          git commit --allow-empty -m 'Automated Deployment'
-          git push          
+          git commit --allow-empty -m 'Automated Site Deployment'
+          git push
