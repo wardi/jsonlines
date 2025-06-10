@@ -22,7 +22,7 @@
 title: JSONLines Standard Content Type
 category: info
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-jsonlines-standard-content-type-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
