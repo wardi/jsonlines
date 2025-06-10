@@ -1,0 +1,76 @@
+name: Build Internet Draft
+
+on:
+  push:
+    branches: ["main"]
+    paths: ["draft-*"]
+  pull_request:
+    branches: ["main"]
+    paths: ["draft-*"]
+  workflow_dispatch:
+    
+permissions:
+  contents: write
+  
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+      - name: "Setup"
+        id: setup
+        run: date -u "+date=%FT%T" >>"$GITHUB_OUTPUT"
+      - name: "Caching"
+        uses: actions/cache@v4
+        with:
+          path: |
+            .refcache
+            .venv
+            .gems
+            node_modules
+            .targets.mk
+          key: i-d-${{ steps.setup.outputs.date }}
+          restore-keys: i-d-
+      - name: "Build Drafts"
+        uses: martinthomson/i-d-template@v1
+        with:
+          token: ${{ github.token }}
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: internet-draft
+          path: draft-*.html
+          overwrite: true
+          
+  push:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      - name: Delete
+        run : rm -rf /tmp/internet-draft
+      - name: Download
+        uses: actions/download-artifact@v4
+        with:
+          name: internet-draft
+          path: /tmp/internet-draft
+      - name: Sync
+        run: |
+          rm -rf internet-draft
+          mv /tmp/internet-draft .
+      - name: Push
+        run: |
+          git status
+          git add .
+          git config --global user.name 'Deploy Bot'
+          git config --global user.email 'deploy-bot@jsonlines.org'
+          git commit --allow-empty -m 'Automated Internet Draft Deployment'
+          git push
