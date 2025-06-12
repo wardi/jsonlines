@@ -5,6 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+    paths: ["site/**"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,6 +23,9 @@ concurrency:
 jobs:
   # Build job
   build:
+    defaults:
+      run:
+        working-directory: ./site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,6 +36,7 @@ jobs:
           ruby-version: '3.3.5'
           bundler-cache: true
           cache-version: 0
+          working-directory: ./site
       - name: Build
         run: bundle exec jekyll build
         env:
@@ -40,7 +45,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: site
-          path: _site
+          path: site/_site
           overwrite: true
 
   # Push job
@@ -60,12 +65,12 @@ jobs:
           name: site
           path: /tmp/site
       - name: Sync
-        run: rsync -avh --delete --exclude .git /tmp/site/ .
+        run: rsync -avh --delete --exclude .git --exclude internet-draft /tmp/site/ .
       - name: Push
         run: |
           git status
           git add .
           git config --global user.name 'Deploy Bot'
           git config --global user.email 'deploy-bot@jsonlines.org'
-          git commit --allow-empty -m 'Automated Deployment'
-          git push          
+          git commit --allow-empty -m 'Automated Site Deployment'
+          git push
