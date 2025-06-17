@@ -19,7 +19,8 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: JSONLines Standard Content Type
+title: JavaScript Object Notation (JSON) Lines
+abbrev: JSON Lines
 category: info
 
 docname: draft-pernetmugnier-json-lines-latest
