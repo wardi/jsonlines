@@ -22,7 +22,7 @@
 title: JSONLines Standard Content Type
 category: info
 
-docname: draft-jsonlines-standard-content-type-latest
+docname: draft-pernetmugnier-json-lines-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -40,7 +40,7 @@ venue:
 #  mail: WG@example.com
 #  arch: https://example.com/WG
   github: "sp4ce/jsonlines"
-  latest: "https://sp4ce.github.io/jsonlines/draft-jsonlines-standard-content-type.html"
+  latest: "https://sp4ce.github.io/jsonlines/draft-pernetmugnier-json-lines.html"
 
 author:
  -
