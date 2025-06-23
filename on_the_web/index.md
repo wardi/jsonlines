@@ -43,7 +43,7 @@ title: On The Web
 
 <p><a href="https://petl.readthedocs.io/en/stable/io.html#databases">petl</a> is a general purpose Python package for extracting, transforming and loading tables of data. It allows importing and exporting documents/records between many databases and file formats, including <a href="https://petl.readthedocs.io/en/stable/io.html#json-files">JSON lines</a>, in local and <a href="https://petl.readthedocs.io/en/stable/io.html#remote-i-o-helper-classes">remote</a> filesystems and clouds.</p>
 
-<p><a href="https://php-jsonl">php-jsonl</a> is a PHP library for reading &amp; writing JSON Lines documents, taking advantage of the streaming benefits.</p>
+<p><a href="https://github.com/indykoning/php-jsonl">php-jsonl</a> is a PHP library for reading &amp; writing JSON Lines documents, taking advantage of the streaming benefits.</p>
 
 <p><a href="https://plot.ly/streaming/">plot.ly</a> uses JSON Lines for its streaming data API</p>
 
