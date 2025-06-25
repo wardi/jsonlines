@@ -47,7 +47,7 @@ author:
  -
     fullname: Baptiste Pernet-Mugnier
     organization: Your Organization Here
-    email: baptiste.pm@protonmail.com
+    email: baptiste.pernetmugnier@gmail.com
 
 normative:
 
