@@ -41,13 +41,13 @@ venue:
 #  mail: WG@example.com
 #  arch: https://example.com/WG
   github: "sp4ce/jsonlines"
-  latest: "https://sp4ce.github.io/jsonlines/draft-pernetmugnier-json-lines.html"
+  latest: "https://sp4ce.github.io/jsonlines/internet-draft/draft-pernetmugnier-json-lines.html"
 
 author:
  -
-    fullname: Your Name Here
+    fullname: Baptiste Pernet-Mugnier
     organization: Your Organization Here
-    email: your.email@example.com
+    email: baptiste.pm@protonmail.com
 
 normative:
 
