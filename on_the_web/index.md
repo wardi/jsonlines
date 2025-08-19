@@ -31,6 +31,8 @@ title: On The Web
 
 <p><a href="https://kubernetes.io">Kubernetes (k8s)</a> is an open-source container orchestration system. It uses JSON Lines as format for <a href="https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/">auditing</a>.</p>
 
+<p><a href="https://www.liquid-technologies.com/xml-studio">Liquid Studio</a> includes a <a href="https://www.liquid-technologies.com/json-lines-editor">JSON Lines Editor</a> in a unique split view. The top view can load Terabyte+ JSON Lines files, the bottom view's JSON editor contains the selected JSON lines item, with syntax highlighting, schema aware validation, auto complete/intellisense, and other tools.</p>
+
 <p><a href="https://logstash.net">Logstash</a> supports JSON Lines via the <a href="https://logstash.net/docs/latest/codecs/json_lines">json_lines codec</a></p>
 
 <p><a href="https://mattermost.com/">Mattermost</a> is an open-source, self-hostable online chat service. It uses JSON Lines as the format for <a href="https://docs.mattermost.com/onboard/bulk-loading-data.html">bulk data migration</a> on self-hosted instances.</p>
