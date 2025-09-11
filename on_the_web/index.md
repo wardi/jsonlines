@@ -58,3 +58,5 @@ title: On The Web
 <p><a href="https://github.com/jwodder/serde-jsonlines">serde-jsonlines</a> is a Rust library for reading &amp; writing JSON Lines documents.</p>
 
 <p><a href="https://shopify.dev/api/usage/bulk-operations/queries">Shopify GraphQL Bulk Operations API</a>, designed for very large data exports from Shopify stores, returns results in the form of a JSONL file.</p>
+
+<p><a href="https://github.com/paolosimone/virtual-json-viewer">Virtual JSON Viewer</a> is a browser extension for navigating large JSON content which natively supports JSON Lines format.</p>
