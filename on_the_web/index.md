@@ -29,6 +29,8 @@ title: On The Web
 
 <p><a href="https://www.graylog.org/resources/gelf/">Graylog GELF</a> is format for log messages, their stream is de-facto JSON lines.</p>
 
+<p><a href="https://immich.app">Immich</a> is a self-hosted photo and video management solution. It uses JSON Lines for <a href="https://immich.app/blog/sync-v2">efficient syncing</a> between its server and mobile clients, enabling incremental, resumable synchronization with minimal memory overhead.</p>
+
 <p><a href="https://kubernetes.io">Kubernetes (k8s)</a> is an open-source container orchestration system. It uses JSON Lines as format for <a href="https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/">auditing</a>.</p>
 
 <p><a href="https://www.liquid-technologies.com/xml-studio">Liquid Studio</a> includes a <a href="https://www.liquid-technologies.com/json-lines-editor">JSON Lines Editor</a> in a unique split view. The top view can load Terabyte+ JSON Lines files, the bottom view's JSON editor contains the selected JSON lines item, with syntax highlighting, schema aware validation, auto complete/intellisense, and other tools.</p>
