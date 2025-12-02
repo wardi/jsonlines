@@ -54,8 +54,8 @@ subtitle: Documentation for the JSON Lines text file format
 <p>
  Including a line terminator after the last JSON value in a file is strongly recommended
  but not required. Including a line terminator after every JSON value makes generating and
- concatenating JSON Lines files easier. A line terminator following the last JSON value in
- a file it must be the last byte in the file.
+ concatenating JSON Lines files easier. If a line terminator follows the last JSON value
+ in a file, it must be the last byte in the file.
 </p>
 <h3>
  <a name="conventions" class="anchor" href="#conventions" id="conventions"></a>
