@@ -45,6 +45,8 @@ title: On The Web
 
 <p><a href="https://neo4j.com/developer">Neo4j</a> the open-source graph database supports JSONL export and import via its standard library procedures <a href="https://neo4j.com/labs/apoc/4.1/export/json/#export-database-json"><code>apoc.export/import.json</code></a> to allow stream processing of nodes and relationships.</p>
 
+<p><a href="https://platform.openai.com/docs/guides/evals#uploading-test-data">OpenAI Evals</a> is an AI Evaluations (Evals) application using JSON Lines to pass in bulk data. </p>
+
 <p><a href="https://petl.readthedocs.io/en/stable/io.html#databases">petl</a> is a general purpose Python package for extracting, transforming and loading tables of data. It allows importing and exporting documents/records between many databases and file formats, including <a href="https://petl.readthedocs.io/en/stable/io.html#json-files">JSON lines</a>, in local and <a href="https://petl.readthedocs.io/en/stable/io.html#remote-i-o-helper-classes">remote</a> filesystems and clouds.</p>
 
 <p><a href="https://github.com/indykoning/php-jsonl">php-jsonl</a> is a PHP library for reading &amp; writing JSON Lines documents, taking advantage of the streaming benefits.</p>
