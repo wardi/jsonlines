@@ -2,6 +2,8 @@
 layout: default
 title: JSON Lines
 subtitle: Documentation for the JSON Lines text file format
+redirect_from:
+- /on_the_web/
 ---
 
 <p>
