@@ -14,5 +14,5 @@
   {%- for javascript in page.custom-javascript-list -%}
   <script src="{{ javascript }}"></script>
   {% endfor %}
-  <title>{%- if page.title != 'JSON Lines' -%}JSON Lines | {%- endif -%}{{ page.title }}</title>
+  <title>{% if page.title != 'JSON Lines' %}JSON Lines | {% endif %}{{ page.title }}</title>
 </head>
