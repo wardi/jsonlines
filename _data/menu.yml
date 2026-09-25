@@ -5,5 +5,5 @@ items:
     url: '/examples/'
   - label: 'Validator'
     url: '/validator/'
-  - label: '↗ json.org'
+  - label: '🡵 json.org'
     url: 'https://json.org'
