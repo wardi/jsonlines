@@ -12,6 +12,10 @@ custom-css-list:
   - /stylesheets/vendor/codemirror-6.65.7-abbott.min.css
 ---
 
+This validator [[view source](/javascripts/validator.js)]
+runs locally in your web browser. No data is transmitted to
+jsonlines.org.
+
 <div id="main_content" class="validator">
   <textarea></textarea>
   <input type="button" value="clear"/>
